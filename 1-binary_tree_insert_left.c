@@ -16,10 +16,10 @@ binary_tree_t *binary_tree_insert_left(binary_tree_t *parent, int value)
 {
 	binary_tree_t *created_child; /* pointer to left child */
 
-	created_child = binary_tree_node(parent, value); /* initialize child */
-
 	if (parent == NULL)
 		return (NULL); /* condition: failure */
+
+	created_child = binary_tree_node(parent, value); /* initialize child */
 
 	if (created_child == NULL)
 		return (NULL); /* condition: failure */
