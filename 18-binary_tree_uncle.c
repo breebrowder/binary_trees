@@ -10,23 +10,23 @@
 
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
-        binary_tree_t *parent, *oldestchild, *youngestchild;
+	binary_tree_t *parent, *oldestchild, *youngestchild;
 
-        if (node == NULL)
-                return (NULL); /* condition */
+	if (node == NULL)
+		return (NULL); /* condition */
 
-        parent = node->parent;
+	parent = node->parent;
 
-        if (parent == NULL)
-                return (NULL); /* condition */
+	if (parent == NULL)
+		return (NULL); /* condition */
 
-        oldestchild = parent->left;
-        youngestchild = parent->right;
+	oldestchild = parent->left;
+	youngestchild = parent->right;
 
-        if (oldestchild == node)
-                return (youngestchild);
+	if (oldestchild == node)
+		return (youngestchild);
 
-        return (oldestchild);
+	return (oldestchild);
 }
 
 /**
