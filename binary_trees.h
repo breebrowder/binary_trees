@@ -82,6 +82,9 @@ size_t binary_tree_leaves(const binary_tree_t *tree);
 /* Task 13 */
 size_t binary_tree_nodes(const binary_tree_t *tree);
 
+/* Task 14: Helper */
+int height_of_tree(const binary_tree_t *tree);
+
 /* Task 14 */
 int binary_tree_balance(const binary_tree_t *tree);
 
